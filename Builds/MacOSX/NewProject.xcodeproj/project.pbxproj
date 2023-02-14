@@ -25,30 +25,58 @@
 
 /* Begin PBXBuildFile section */
 		02BDD739F8C71EF228091AFC /* PluginProcessor.cpp */ = {isa = PBXBuildFile; fileRef = 6174CE045AD3235794917C6D; };
+		05D1B0E63209A096ED2D3DE2 /* CoreMIDI.framework */ = {isa = PBXBuildFile; fileRef = 24F0BD09408F9132C556C99F; };
+		07412CA11F827DD85D064E89 /* AudioToolbox.framework */ = {isa = PBXBuildFile; fileRef = A949DFDC0322A6276E62E27E; };
 		0AE5CDAB8C2E3316421E9242 /* PluginEditor.cpp */ = {isa = PBXBuildFile; fileRef = 50F0B291E832472D7F27601C; };
+		0D9AC37DAB5BD7F56ED90CEF /* include_juce_audio_formats.mm */ = {isa = PBXBuildFile; fileRef = 11EF723A6786E891A931E36D; };
+		0E11B7E74F2AF3D02FA50317 /* Cocoa.framework */ = {isa = PBXBuildFile; fileRef = 8C079CE1EAE718DCD046B6BD; };
 		0E99B9AB065BD5C171DDB5C8 /* Standalone Plugin */ = {isa = PBXBuildFile; fileRef = 9D5B882E22ACE4954344BAE9; };
+		5A435ABD241D9FC9E3673EFB /* CoreAudio.framework */ = {isa = PBXBuildFile; fileRef = 1DFFBA4371544C76E8E53BFC; };
 		67DD3C8B95275B00BEF91B07 /* CoreAudioKit.framework */ = {isa = PBXBuildFile; fileRef = F37BD32F6FB63220E6FAF9A3; };
 		74CA7C91DE02080E02692E3C /* AU */ = {isa = PBXBuildFile; fileRef = 035FB762FCF2A81C59AFF65D; };
+		7503600772A7CC1D70A4DB4E /* include_juce_audio_basics.mm */ = {isa = PBXBuildFile; fileRef = E4C02BC6682C0D907D1C341A; };
+		7C4399209868BDC0908C9874 /* QuartzCore.framework */ = {isa = PBXBuildFile; fileRef = 1A4421F9479A8219A73310ED; };
 		891CEBC946A1F2BC4FCFC0CB /* RecentFilesMenuTemplate.nib */ = {isa = PBXBuildFile; fileRef = D7105F7E239D5BEC30226FF0; };
+		903D7C05E0A0444A2CAFCEB7 /* Accelerate.framework */ = {isa = PBXBuildFile; fileRef = 02EECCD245F79835FC0D563A; };
 		92BD690841A276BDC15B1CB6 /* Shared Code */ = {isa = PBXBuildFile; fileRef = D7D6BFFA050820A59C59348A; };
+		9AB0B0523A99C924CBCDE97C /* Foundation.framework */ = {isa = PBXBuildFile; fileRef = 49E3126B35546CB89DEF875F; };
 		AA0EF625E5D8F2313DAC832B /* VST3 */ = {isa = PBXBuildFile; fileRef = 79FF333E87128D35BD5105E3; };
 		AB75022317AEABDD8EDF7BE4 /* AudioUnit.framework */ = {isa = PBXBuildFile; fileRef = 55091C0B5EB24317BF8DBDBB; };
+		B1BA4169D25328269EFE0ED2 /* IOKit.framework */ = {isa = PBXBuildFile; fileRef = 1B887BEEE04B6395B480D083; };
+		C5F95EA3C8BEF00B202EF379 /* include_juce_dsp.mm */ = {isa = PBXBuildFile; fileRef = A7D06F1F0CEAFC161BC97E47; };
+		DAE1659EFE96724CCAE335BA /* include_juce_core.mm */ = {isa = PBXBuildFile; fileRef = BE4193C88D4C4BB74AE609A6; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02EECCD245F79835FC0D563A /* Accelerate.framework */ /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		035FB762FCF2A81C59AFF65D /* AU */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewProject.component; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C24DEB8E6C9B29FE325C2A4 /* juce_audio_basics */ /* juce_audio_basics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_basics; path = ../../../JUCE/modules/juce_audio_basics; sourceTree = SOURCE_ROOT; };
+		11EF723A6786E891A931E36D /* include_juce_audio_formats.mm */ /* include_juce_audio_formats.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_formats.mm; path = ../../JuceLibraryCode/include_juce_audio_formats.mm; sourceTree = SOURCE_ROOT; };
 		1736074C97DF6CC1E2CCA99B /* PluginEditor.h */ /* PluginEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PluginEditor.h; path = ../../Source/PluginEditor.h; sourceTree = SOURCE_ROOT; };
+		1A4421F9479A8219A73310ED /* QuartzCore.framework */ /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1B887BEEE04B6395B480D083 /* IOKit.framework */ /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		1DFFBA4371544C76E8E53BFC /* CoreAudio.framework */ /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		24F0BD09408F9132C556C99F /* CoreMIDI.framework */ /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		24F764E6B8F205CC58C50AAE /* Info-Standalone_Plugin.plist */ /* Info-Standalone_Plugin.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-Standalone_Plugin.plist"; path = "Info-Standalone_Plugin.plist"; sourceTree = SOURCE_ROOT; };
+		49E3126B35546CB89DEF875F /* Foundation.framework */ /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4DD364DC9BF900A1AFAA27B1 /* juce_core */ /* juce_core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_core; path = ../../../JUCE/modules/juce_core; sourceTree = SOURCE_ROOT; };
 		50F0B291E832472D7F27601C /* PluginEditor.cpp */ /* PluginEditor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PluginEditor.cpp; path = ../../Source/PluginEditor.cpp; sourceTree = SOURCE_ROOT; };
 		55091C0B5EB24317BF8DBDBB /* AudioUnit.framework */ /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		6174CE045AD3235794917C6D /* PluginProcessor.cpp */ /* PluginProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PluginProcessor.cpp; path = ../../Source/PluginProcessor.cpp; sourceTree = SOURCE_ROOT; };
 		7423D5480337C91214146670 /* Info-AU.plist */ /* Info-AU.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-AU.plist"; path = "Info-AU.plist"; sourceTree = SOURCE_ROOT; };
 		79FF333E87128D35BD5105E3 /* VST3 */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewProject.vst3; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C079CE1EAE718DCD046B6BD /* Cocoa.framework */ /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9D5B882E22ACE4954344BAE9 /* Standalone Plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34FA43D683B5E8C5DA547E0 /* juce_audio_formats */ /* juce_audio_formats */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_formats; path = ../../../JUCE/modules/juce_audio_formats; sourceTree = SOURCE_ROOT; };
+		A7D06F1F0CEAFC161BC97E47 /* include_juce_dsp.mm */ /* include_juce_dsp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_dsp.mm; path = ../../JuceLibraryCode/include_juce_dsp.mm; sourceTree = SOURCE_ROOT; };
+		A949DFDC0322A6276E62E27E /* AudioToolbox.framework */ /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B9EACAA4FB48DBE3A549299C /* JucePluginDefines.h */ /* JucePluginDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JucePluginDefines.h; path = ../../JuceLibraryCode/JucePluginDefines.h; sourceTree = SOURCE_ROOT; };
+		BE4193C88D4C4BB74AE609A6 /* include_juce_core.mm */ /* include_juce_core.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_core.mm; path = ../../JuceLibraryCode/include_juce_core.mm; sourceTree = SOURCE_ROOT; };
+		C19F591DAE52248BBC7951EA /* juce_dsp */ /* juce_dsp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_dsp; path = ../../../JUCE/modules/juce_dsp; sourceTree = SOURCE_ROOT; };
 		C1E2D80E4B0582A2EA8008D8 /* JuceHeader.h */ /* JuceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JuceHeader.h; path = ../../JuceLibraryCode/JuceHeader.h; sourceTree = SOURCE_ROOT; };
 		D7105F7E239D5BEC30226FF0 /* RecentFilesMenuTemplate.nib */ /* RecentFilesMenuTemplate.nib */ = {isa = PBXFileReference; lastKnownFileType = file.nib; name = RecentFilesMenuTemplate.nib; path = RecentFilesMenuTemplate.nib; sourceTree = SOURCE_ROOT; };
 		D7D6BFFA050820A59C59348A /* Shared Code */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNewProject.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4C02BC6682C0D907D1C341A /* include_juce_audio_basics.mm */ /* include_juce_audio_basics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_basics.mm; path = ../../JuceLibraryCode/include_juce_audio_basics.mm; sourceTree = SOURCE_ROOT; };
 		F37BD32F6FB63220E6FAF9A3 /* CoreAudioKit.framework */ /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 		F385F4EC4D5B44C6132AC55D /* Info-VST3.plist */ /* Info-VST3.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-VST3.plist"; path = "Info-VST3.plist"; sourceTree = SOURCE_ROOT; };
 		FC5D7A2D712C4A50583D8FFE /* PluginProcessor.h */ /* PluginProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PluginProcessor.h; path = ../../Source/PluginProcessor.h; sourceTree = SOURCE_ROOT; };
@@ -60,7 +88,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB75022317AEABDD8EDF7BE4,
+				903D7C05E0A0444A2CAFCEB7,
+				07412CA11F827DD85D064E89,
+				0E11B7E74F2AF3D02FA50317,
+				5A435ABD241D9FC9E3673EFB,
 				67DD3C8B95275B00BEF91B07,
+				05D1B0E63209A096ED2D3DE2,
+				9AB0B0523A99C924CBCDE97C,
+				B1BA4169D25328269EFE0ED2,
+				7C4399209868BDC0908C9874,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +104,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				903D7C05E0A0444A2CAFCEB7,
+				07412CA11F827DD85D064E89,
+				0E11B7E74F2AF3D02FA50317,
+				5A435ABD241D9FC9E3673EFB,
+				05D1B0E63209A096ED2D3DE2,
+				9AB0B0523A99C924CBCDE97C,
+				B1BA4169D25328269EFE0ED2,
+				7C4399209868BDC0908C9874,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +119,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				903D7C05E0A0444A2CAFCEB7,
+				07412CA11F827DD85D064E89,
+				0E11B7E74F2AF3D02FA50317,
+				5A435ABD241D9FC9E3673EFB,
+				05D1B0E63209A096ED2D3DE2,
+				9AB0B0523A99C924CBCDE97C,
+				B1BA4169D25328269EFE0ED2,
+				7C4399209868BDC0908C9874,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +137,15 @@
 			isa = PBXGroup;
 			children = (
 				55091C0B5EB24317BF8DBDBB,
+				02EECCD245F79835FC0D563A,
+				A949DFDC0322A6276E62E27E,
+				8C079CE1EAE718DCD046B6BD,
+				1DFFBA4371544C76E8E53BFC,
 				F37BD32F6FB63220E6FAF9A3,
+				24F0BD09408F9132C556C99F,
+				49E3126B35546CB89DEF875F,
+				1B887BEEE04B6395B480D083,
+				1A4421F9479A8219A73310ED,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,16 +153,32 @@
 		14A17789FCDD990121830132 /* JUCE Library Code */ = {
 			isa = PBXGroup;
 			children = (
+				E4C02BC6682C0D907D1C341A,
+				11EF723A6786E891A931E36D,
+				BE4193C88D4C4BB74AE609A6,
+				A7D06F1F0CEAFC161BC97E47,
 				C1E2D80E4B0582A2EA8008D8,
 				B9EACAA4FB48DBE3A549299C,
 			);
 			name = "JUCE Library Code";
 			sourceTree = "<group>";
 		};
+		6A5D43AACA02305ECC47658A /* JUCE Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0C24DEB8E6C9B29FE325C2A4,
+				A34FA43D683B5E8C5DA547E0,
+				4DD364DC9BF900A1AFAA27B1,
+				C19F591DAE52248BBC7951EA,
+			);
+			name = "JUCE Modules";
+			sourceTree = "<group>";
+		};
 		79EE07791588EE4AD80991C2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				8571242CDDDE4AFB0CF8FD13,
+				6A5D43AACA02305ECC47658A,
 				14A17789FCDD990121830132,
 				7E6CBEE8822DCDC7E8979EAB,
 				139CDE707F5D765D513FD32E,
@@ -406,6 +482,10 @@
 			files = (
 				02BDD739F8C71EF228091AFC,
 				0AE5CDAB8C2E3316421E9242,
+				7503600772A7CC1D70A4DB4E,
+				0D9AC37DAB5BD7F56ED90CEF,
+				DAE1659EFE96724CCAE335BA,
+				C5F95EA3C8BEF00B202EF379,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,7 +613,12 @@
 					"JUCE_DISPLAY_SPLASH_SCREEN=1",
 					"JUCE_USE_DARK_SPLASH_SCREEN=1",
 					"JUCE_PROJUCER_VERSION=0x70005",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
 					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
 					"JucePlugin_Build_VST=0",
 					"JucePlugin_Build_VST3=0",
 					"JucePlugin_Build_AU=1",
@@ -594,6 +679,7 @@
 				HEADER_SEARCH_PATHS = (
 					"/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
 					"$(SRCROOT)/../../JuceLibraryCode",
+					"$(SRCROOT)/../../../JUCE/modules",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Info-AU.plist;
@@ -601,7 +687,7 @@
 				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/Components/";
 				LIBRARY_STYLE = Bundle;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_HEADER_SEARCH_PATHS = "/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode";
+				MTL_HEADER_SEARCH_PATHS = "/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(SRCROOT)/../../../JUCE/modules";
 				OTHER_LDFLAGS = "-bundle -lNewProject";
 				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -d arm64_$arm64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.NewProject;
@@ -632,7 +718,12 @@
 					"JUCE_DISPLAY_SPLASH_SCREEN=1",
 					"JUCE_USE_DARK_SPLASH_SCREEN=1",
 					"JUCE_PROJUCER_VERSION=0x70005",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
 					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
 					"JucePlugin_Build_VST=0",
 					"JucePlugin_Build_VST3=1",
 					"JucePlugin_Build_AU=0",
@@ -693,6 +784,7 @@
 				HEADER_SEARCH_PATHS = (
 					"/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
 					"$(SRCROOT)/../../JuceLibraryCode",
+					"$(SRCROOT)/../../../JUCE/modules",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Info-VST3.plist;
@@ -700,7 +792,7 @@
 				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/VST3/";
 				LIBRARY_STYLE = Bundle;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_HEADER_SEARCH_PATHS = "/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode";
+				MTL_HEADER_SEARCH_PATHS = "/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(SRCROOT)/../../../JUCE/modules";
 				OTHER_LDFLAGS = "-bundle -lNewProject";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.NewProject;
 				PRODUCT_NAME = "NewProject";
@@ -728,7 +820,12 @@
 					"JUCE_DISPLAY_SPLASH_SCREEN=1",
 					"JUCE_USE_DARK_SPLASH_SCREEN=1",
 					"JUCE_PROJUCER_VERSION=0x70005",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
 					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
 					"JucePlugin_Build_VST=0",
 					"JucePlugin_Build_VST3=1",
 					"JucePlugin_Build_AU=1",
@@ -789,11 +886,12 @@
 				HEADER_SEARCH_PATHS = (
 					"/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
 					"$(SRCROOT)/../../JuceLibraryCode",
+					"$(SRCROOT)/../../../JUCE/modules",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_HEADER_SEARCH_PATHS = "/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode";
+				MTL_HEADER_SEARCH_PATHS = "/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(SRCROOT)/../../../JUCE/modules";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.NewProject;
 				PRODUCT_NAME = "NewProject";
 				SKIP_INSTALL = YES;
@@ -820,7 +918,12 @@
 					"JUCE_DISPLAY_SPLASH_SCREEN=1",
 					"JUCE_USE_DARK_SPLASH_SCREEN=1",
 					"JUCE_PROJUCER_VERSION=0x70005",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
 					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
 					"JucePlugin_Build_VST=0",
 					"JucePlugin_Build_VST3=0",
 					"JucePlugin_Build_AU=0",
@@ -880,12 +983,13 @@
 				HEADER_SEARCH_PATHS = (
 					"/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
 					"$(SRCROOT)/../../JuceLibraryCode",
+					"$(SRCROOT)/../../../JUCE/modules",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Info-Standalone_Plugin.plist;
 				INFOPLIST_PREPROCESS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_HEADER_SEARCH_PATHS = "/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode";
+				MTL_HEADER_SEARCH_PATHS = "/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(SRCROOT)/../../../JUCE/modules";
 				OTHER_LDFLAGS = "-lNewProject";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.NewProject;
 				PRODUCT_NAME = "NewProject";
@@ -920,7 +1024,12 @@
 					"JUCE_DISPLAY_SPLASH_SCREEN=1",
 					"JUCE_USE_DARK_SPLASH_SCREEN=1",
 					"JUCE_PROJUCER_VERSION=0x70005",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
 					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
 					"JucePlugin_Build_VST=0",
 					"JucePlugin_Build_VST3=1",
 					"JucePlugin_Build_AU=1",
@@ -981,12 +1090,13 @@
 				HEADER_SEARCH_PATHS = (
 					"/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
 					"$(SRCROOT)/../../JuceLibraryCode",
+					"$(SRCROOT)/../../../JUCE/modules",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_HEADER_SEARCH_PATHS = "/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode";
+				MTL_HEADER_SEARCH_PATHS = "/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(SRCROOT)/../../../JUCE/modules";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.NewProject;
 				PRODUCT_NAME = "NewProject";
 				SKIP_INSTALL = YES;
@@ -1013,7 +1123,12 @@
 					"JUCE_DISPLAY_SPLASH_SCREEN=1",
 					"JUCE_USE_DARK_SPLASH_SCREEN=1",
 					"JUCE_PROJUCER_VERSION=0x70005",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
 					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
 					"JucePlugin_Build_VST=0",
 					"JucePlugin_Build_VST3=0",
 					"JucePlugin_Build_AU=0",
@@ -1073,13 +1188,14 @@
 				HEADER_SEARCH_PATHS = (
 					"/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
 					"$(SRCROOT)/../../JuceLibraryCode",
+					"$(SRCROOT)/../../../JUCE/modules",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Info-Standalone_Plugin.plist;
 				INFOPLIST_PREPROCESS = NO;
 				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_HEADER_SEARCH_PATHS = "/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode";
+				MTL_HEADER_SEARCH_PATHS = "/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(SRCROOT)/../../../JUCE/modules";
 				OTHER_LDFLAGS = "-lNewProject";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.NewProject;
 				PRODUCT_NAME = "NewProject";
@@ -1155,7 +1271,12 @@
 					"JUCE_DISPLAY_SPLASH_SCREEN=1",
 					"JUCE_USE_DARK_SPLASH_SCREEN=1",
 					"JUCE_PROJUCER_VERSION=0x70005",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
 					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
 					"JucePlugin_Build_VST=0",
 					"JucePlugin_Build_VST3=0",
 					"JucePlugin_Build_AU=1",
@@ -1216,6 +1337,7 @@
 				HEADER_SEARCH_PATHS = (
 					"/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
 					"$(SRCROOT)/../../JuceLibraryCode",
+					"$(SRCROOT)/../../../JUCE/modules",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Info-AU.plist;
@@ -1224,7 +1346,7 @@
 				LIBRARY_STYLE = Bundle;
 				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_HEADER_SEARCH_PATHS = "/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode";
+				MTL_HEADER_SEARCH_PATHS = "/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(SRCROOT)/../../../JUCE/modules";
 				OTHER_LDFLAGS = "-bundle -lNewProject";
 				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -d arm64_$arm64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.NewProject;
@@ -1255,7 +1377,12 @@
 					"JUCE_DISPLAY_SPLASH_SCREEN=1",
 					"JUCE_USE_DARK_SPLASH_SCREEN=1",
 					"JUCE_PROJUCER_VERSION=0x70005",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
 					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
 					"JucePlugin_Build_VST=0",
 					"JucePlugin_Build_VST3=1",
 					"JucePlugin_Build_AU=0",
@@ -1316,6 +1443,7 @@
 				HEADER_SEARCH_PATHS = (
 					"/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
 					"$(SRCROOT)/../../JuceLibraryCode",
+					"$(SRCROOT)/../../../JUCE/modules",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Info-VST3.plist;
@@ -1324,7 +1452,7 @@
 				LIBRARY_STYLE = Bundle;
 				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_HEADER_SEARCH_PATHS = "/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode";
+				MTL_HEADER_SEARCH_PATHS = "/Users/donut/Dev/audio/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(SRCROOT)/../../../JUCE/modules";
 				OTHER_LDFLAGS = "-bundle -lNewProject";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.NewProject;
 				PRODUCT_NAME = "NewProject";

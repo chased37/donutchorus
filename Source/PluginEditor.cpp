@@ -1,40 +1,55 @@
-/*
-  ==============================================================================
-
-    This file contains the basic framework code for a JUCE plugin editor.
-
-  ==============================================================================
-*/
-
-#include "PluginProcessor.h"
 #include "PluginEditor.h"
 
-//==============================================================================
-NewProjectAudioProcessorEditor::NewProjectAudioProcessorEditor (NewProjectAudioProcessor& p)
-    : AudioProcessorEditor (&p), audioProcessor (p)
+ChorusPluginAudioEditor::ChorusPluginAudioEditor(ChorusPluginAudioProcessor& p)
+    : AudioProcessorEditor(&p), audioProcessor(p)
 {
-    // Make sure that before the constructor has finished, you've set the
-    // editor's size to whatever you need it to be.
-    setSize (400, 300);
+    setSize(400, 300);
+
+    dryWetSlider.setSliderStyle(juce::Slider::SliderStyle::Rotary);
+    dryWetSlider.setTextBoxStyle(juce::Slider::NoTextBox, false, 0, 0);
+    dryWetSlider.setRange(0.0f, 1.0f, 0.01f);
+    dryWetSlider.setValue(0.5f);
+    dryWetSlider.setSkewFactorFromMidPoint(0.5f);
+    addAndMakeVisible(dryWetSlider);
+    dryWetSlider.addListener(this);
+
+    delayTimeSlider.setSliderStyle(juce::Slider::SliderStyle::Rotary);
+    delayTimeSlider.setTextBoxStyle(juce::Slider::NoTextBox, false, 0, 0);
+    delayTimeSlider.setRange(0.0f, 1.0f, 0.01f);
+    delayTimeSlider.setValue(0.5f);
+    delayTimeSlider.setSkewFactorFromMidPoint(0.5f);
+    addAndMakeVisible(delayTimeSlider);
+    delayTimeSlider.addListener(this);
+
+    depthSlider.setSliderStyle(juce::Slider::SliderStyle::Rotary);
+    depthSlider.setTextBoxStyle(juce::Slider::NoTextBox, false, 0, 0);
+    depthSlider.setRange(0.0f, 1.0f, 0.01f);
+    depthSlider.setValue(0.5f);
+    depthSlider.setSkewFactorFromMidPoint(0.5f);
+    addAndMakeVisible(depthSlider);
+    depthSlider.addListener(this);
 }
 
-NewProjectAudioProcessorEditor::~NewProjectAudioProcessorEditor()
+ChorusPluginAudioEditor::~ChorusPluginAudioEditor()
 {
 }
 
-//==============================================================================
-void NewProjectAudioProcessorEditor::paint (juce::Graphics& g)
+void ChorusPluginAudioEditor::paint(juce::Graphics& g)
 {
-    // (Our component is opaque, so we must completely fill the background with a solid colour)
-    g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
+    g.fillAll(juce::Colours::black);
 
-    g.setColour (juce::Colours::white);
-    g.setFont (15.0f);
-    g.drawFittedText ("Hello World!", getLocalBounds(), juce::Justification::centred, 1);
+    g.setColour(juce::Colours::white);
+    g.setFont(15.0f);
+    g.drawText("Chorus Plugin", getLocalBounds(), juce::Justification::centredTop);
 }
 
-void NewProjectAudioProcessorEditor::resized()
+void ChorusPluginAudioEditor::resized()
 {
-    // This is generally where you'll want to lay out the positions of any
-    // subcomponents in your editor..
+    auto area = getLocalBounds();
+
+    auto sliders = area.removeFromTop(area.getHeight() / 2);
+
+    dryWetSlider.setBounds(sliders.removeFromLeft(sliders.getWidth() / 3).reduced(10));
+    delayTimeSlider.setBounds(sliders.removeFromLeft(sliders.getWidth() / 2).reduced(10));
+    depthSlider.setBounds(sliders.reduced(10));
 }
